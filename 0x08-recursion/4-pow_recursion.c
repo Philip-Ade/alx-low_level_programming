@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pow_recursion _ function name
+ * _pow_recursion - recursion power
  * @x: parameter 1
  * @y: parameter 2
  * Return: value of a given number passed to the function
