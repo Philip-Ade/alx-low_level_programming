@@ -1,20 +1,17 @@
 #include "variadic_functions.h"
 /**
- * print_all - print any argument provided to
- * function
- * @format: any argument given based on format specifier
+ * print_all - print any argument provided
+ * @format: argument specifier
  *
- * Return: any argument given based on format specifier
+ * Return: any argument given based on specified format
  */
 void print_all(const char * const format, ...)
 {
 	int i, check_stat; /* declare variables and va_arg datatype */
-
 	char *str;
 	va_list spc;
 
 	va_start(spc, format); /* initaize var arguments */
-
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
@@ -37,6 +34,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				check_stat = 0;
 				break;
 			default:
 				check_stat = 1;
