@@ -8,19 +8,20 @@
 
 int main(void)
 {
-	int i;
+	char d = '0';
 
-	for (i = 0 ; i < 10 ; i++)
+	while (d <= '9')
 	{
-		if (i == 9)
-			putchar(i + '0');
-		else
+		putchar(d);
+		if (d <= '8')
 		{
-			putchar(i + '0');
 			putchar(',');
 			putchar(' ');
 		}
+		d++;
 	}
+	putchar('\n');
+
 	return (0);
 }
 
